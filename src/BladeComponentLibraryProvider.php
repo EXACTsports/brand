@@ -5,7 +5,9 @@ namespace EXACTSports\BladeComponentLibrary;
 
 use EXACTSports\BladeComponentLibrary\Components\ExampleComponent;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 
 class BladeComponentLibraryProvider extends ServiceProvider
@@ -15,6 +17,9 @@ class BladeComponentLibraryProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'bcl');
 
-        Blade::component(ExampleComponent::class, 'example-component');
+        foreach (File::files(__DIR__.'/../src/Components') as $file) {
+            Blade::component('EXACTSports\\BladeComponentLibrary\\Components\\' . $file->getFilenameWithoutExtension(),
+                Str::slug(join(' ', preg_split('/(?=[A-Z])/', $file->getFilenameWithoutExtension()))));
+        }
     }
 }
