@@ -1,0 +1,38 @@
+{
+    "name": "grosv/blade-component-library",
+    "description": "A Laravel package designed to demonstrate how an organization can share blade components among all their Laravel 7+ sites",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ed Grosvenor",
+            "email": "ed.grosvenor@wickedviral.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "nunomaduro/laravel-mojito": "^v0.2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grosv\\BladeComponentLibrary\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "App\\": "vendor/orchestra/testbench-core/laravel/app"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": "Grosv\\BladeComponentLibrary\\BladeComponentLibraryProvider"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
