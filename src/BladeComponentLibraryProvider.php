@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Grosv\BladeComponentLibrary;
+namespace EXACTSports\BladeComponentLibrary;
 
-use Grosv\BladeComponentLibrary\Components\ExampleComponent;
+use EXACTSports\BladeComponentLibrary\Components\ExampleComponent;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 

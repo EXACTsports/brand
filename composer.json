@@ -1,12 +1,12 @@
 {
-    "name": "grosv/blade-component-library",
-    "description": "A Laravel package designed to demonstrate how an organization can share blade components among all their Laravel 7+ sites",
+    "name": "exactsports/blade-component-library",
+    "description": "UI components pre-styled with our branding",
     "type": "library",
-    "license": "MIT",
+    "license": "Proprietary",
     "authors": [
         {
             "name": "Ed Grosvenor",
-            "email": "ed.grosvenor@wickedviral.com"
+            "email": "ed.grosvenor@exactsports.com"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Grosv\\BladeComponentLibrary\\": "src/"
+            "EXACTSports\\BladeComponentLibrary\\": "src/"
         }
     },
     "autoload-dev": {
@@ -30,7 +30,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": "Grosv\\BladeComponentLibrary\\BladeComponentLibraryProvider"
+            "providers": "EXACTSports\\BladeComponentLibrary\\BladeComponentLibraryProvider"
         }
     },
     "minimum-stability": "dev",

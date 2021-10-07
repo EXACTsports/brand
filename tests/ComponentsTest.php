@@ -20,4 +20,10 @@ class ComponentsTest extends TestCase
     {
         $this->assertView('bcl::example')->contains('It Worked');
     }
+
+    /** @test */
+    public function can_show_example_anonymous_component()
+    {
+        $this->assertView('bcl::example')->contains('Anonymous Worked');
+    }
 }

@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Grosv\BladeComponentLibrary\BladeComponentLibraryProvider;
+use EXACTSports\BladeComponentLibrary\BladeComponentLibraryProvider;
 use NunoMaduro\LaravelMojito\MojitoServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Grosv\BladeComponentLibrary\Components;
+namespace EXACTSports\BladeComponentLibrary\Components;
 
 use Illuminate\View\Component;
 
