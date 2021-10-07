@@ -2,7 +2,7 @@
     "name": "exactsports/blade-component-library",
     "description": "UI components pre-styled with our branding",
     "type": "library",
-    "license": "Proprietary",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Ed Grosvenor",
