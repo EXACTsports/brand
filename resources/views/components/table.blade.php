@@ -6,8 +6,8 @@
 @endphp
 
 <div {{ $attributes->merge(['class' => $classes]) }} {{$additional}}>
-    <table class="{{ $attributes->merge(['class' => $tableClass]) }}">
-        <thead class="{{ $attributes->merge(['class' => $headClass]) }}">
+    <table {{ $attributes->merge(['class' => $tableClass]) }}>
+        <thead {{ $attributes->merge(['class' => $headClass]) }}>
             <tr>
                 {{ $head }}
             </tr>
