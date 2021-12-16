@@ -36,11 +36,31 @@ Target and href are standard anchor variables.
 <x-bcl::anchor color="blue" href="https://laravel.com" target="_blank" icon="ext">Laravel</x-bcl::anchor>
 ```
 
+### Alerts
+
 ### Badges
 
 ### Buttons
+Buttons have one optional variable that can be passed to the component: icon.
+
+The icon choices are: football, video, upload, share, label.
+
+AlpineJS and Livewire models can also be used with the 'x-' and 'wire:' attributes.
+
+```
+<x-bcl::button.primary icon="football">Primary Button</x-bcl::button.primary>
+<x-bcl::button.secondary>Secondary Button</x-bcl::button.secondary>
+<x-bcl::button.cancel>Cancel Button</x-bcl::button.cancel>
+```
 
 ### Icon Links
+Icon links are standard anchor tags that are icons instead of text. One variable can be passed to the component: icon.
+
+The icon choices are: football, edit, delete, share, label.
+
+```
+<x-bcl::icon-link href="#" icon="football"></x-bcl::icon-link>
+```
 
 ### Logos
 
