@@ -19,9 +19,13 @@ HTML headings are defined with the ```<h1>``` to ```<h6>``` tags.
 
 ### Links
 Anchor tags ```<a>``` have four variables that can be passed through to the component: href (default: #), color (default: blue), icon (default: null) and target (default: _blank).
+
 The color choices are: blue, logo-orage, bright-orange and maroon.
+
 The icon choices are ext (external link) and back (back arrow).
+
 Target and href are standard anchor variables.
+
 
 ```
 <x-bcl::anchor color="blue" href="https://laravel.com" target="_blank" icon="ext">Laravel</x-bcl::anchor>
