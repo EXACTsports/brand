@@ -4,6 +4,13 @@
 This repository contains UI components and assets with our branding. It is only designed for use on EXACT Sports branded websites.
 
 ## Components
+All the components can have class attributes which will be merged with the base component class.<br>
+For some components there are different settings based on the brand.  The brand is added to the .env file:<br>
+```
+BRAND = exact
+```
+The current options are: 'exact' and 'spect8'.
+
 
 ### Headings
 HTML headings are defined with the ```<h1>``` to ```<h6>``` tags.
@@ -28,3 +35,19 @@ Target and href are standard anchor variables.
 ```
 <x-bcl::anchor color="blue" href="https://laravel.com" target="_blank" icon="ext">Laravel</x-bcl::anchor>
 ```
+
+### Badges
+
+### Buttons
+
+### Icon Links
+
+### Logos
+
+### Progress Steps
+
+### Loading Spinners
+
+### Inputs
+
+### Tables
