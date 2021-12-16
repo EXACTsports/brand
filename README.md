@@ -6,7 +6,7 @@ This repository contains UI components and assets with our branding. It is only 
 ## Components
 
 ### Headings
-HTML headings are defined with the <h1> to <h6> tags.
+HTML headings are defined with the ```<h1>``` to ```<h6>``` tags.
 
 ```
 <x-bcl::headings.h1>Heading 1</x-bcl::headings.h1>
