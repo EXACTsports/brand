@@ -39,6 +39,16 @@ Target and href are standard anchor variables.
 ### Alerts
 
 ### Badges
+Buttons have one optional variable that can be passed to the component: color.
+
+The color choices are based on the brands and are: logo-orange, bright-orange, maroon, dark-gray, pale-brown and beige.
+
+AlpineJS and Livewire models can also be used with the 'x-' and 'wire:' attributes.
+
+```
+<x-bcl::badge color="bright-orange">Badge</x-bcl::badge>
+```
+
 
 ### Buttons
 Buttons have one optional variable that can be passed to the component: icon.
