@@ -3,7 +3,22 @@
 ## About This Repository
 This repository contains UI components and assets with our branding. It is only designed for use on EXACT Sports branded websites.
 
+## Installation
+
+
 ## Components
+- [Headings](#headings) 
+- [Links](#links) 
+- [Alerts](#alerts) 
+- [Badges](#badges) 
+- [Buttons](#buttons) 
+- [Icon Links](#icon-links) 
+- [Logos](#logos) 
+- [Progress Steps](#progress-steps) 
+- [Loading Spinners](#loading-spinners) 
+- [Inputs](#inputs) 
+- [Tables](#tables) 
+
 All the components can have class attributes which will be merged with the base component class.<br>
 For some components there are different settings based on the brand.  The brand is added to the .env file:<br>
 ```
