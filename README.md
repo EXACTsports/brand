@@ -79,5 +79,72 @@ The icon choices are: football, edit, delete, share, label.
 ### Loading Spinners
 
 ### Inputs
+Inputs can be used horizontally or vertically.  The default is vertical (the label above the input), to change to the label being to the left of the input add the 'inline' attribute.
+
+There are size different types of input: text, textarea, checkbox and select. There are also two input groups: checkbox and radio.
+
+Vertical alignment requires a grid or flex on the containing ```<div>```, see the example below.  The vertical alignment has no class requirements on the containing div.
+
+Each input is contained within either the group component or, for checbox and radio groups, the option-group component.
+
+Each type of input has its own attributes:
+
+#### Group
+Attributes: label, for, error (default is false), helpText (default is false) and inline (default is false).
+
+#### Option Group
+Attributes: inline and label.
+
+#### Text
+Attributes: id, name, placeholder and type (default is text).
+
+#### Textarea
+Attributes: id, name, placeholder and rows (default is 3).
+
+#### Select
+Attributes: id, name and placeholder.
+
+#### Checkbox
+Attributes: id, name, value.
+
+#### Option
+Attributes: id, name, label, value and type (radio or checkbox).
+
+```
+<div class="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
+    <!-- Input: text -->
+    <x-input.group for="testText" label="input.text" error="Sample error text" helpText="Sample help text">
+        <x-input.text id="testText" name="testText" aria-placeholder="test" placeholder="testText" />
+    </x-input.group>
+    <!-- Textarea -->
+    <x-input.group for="testTextarea" label="input.textarea" error="Sample error text" helpText="Sample help text">
+        <x-input.textarea id="testTextarea" name="testTextarea" aria-placeholder="test" placeholder="testTextarea" rows="5"></x-input.textarea>
+    </x-input.group>
+    <!-- Input: Checkbox -->
+    <x-input.group for="testCheckbox" label="input.checkbox" error="Sample error text" helpText="Sample help text">
+        <x-input.checkbox id="testCheckbox" name="testCheckbox" value="1" />
+    </x-input.group>
+    <!-- Select/Dropdown -->
+    <x-input.group for="testSelect" label="input.select" error="Sample error text" helpText="Sample help text">
+        <x-input.select id="testSelect" name="testSelect">
+            <option value="" disabled>Select Column...</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 1</option>
+        </x-input.select>
+    </x-input.group>
+
+    <!-- Input: Radio Group-->
+    <x-input.option-group label="input.option-group: Radio">
+        <x-input.option type="radio" id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.option>
+        <x-input.option type="radio" id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.option>
+    </x-input.option-group>
+
+    <!-- Input: Checkbox Group-->
+    <x-input.option-group label="input.option-group: Checkbox">
+        <x-input.option type="checkbox" id="check-group" name="check-group" value="1" label="check 1"></x-input.option>
+        <x-input.option type="checkbox" id="check-group" name="check-group" value="2" label="check 2"></x-input.option>
+    </x-input.option-group>
+</div>
+```
 
 ### Tables
