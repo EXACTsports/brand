@@ -92,6 +92,17 @@ The icon choices are: football, edit, delete, share, label.
 ### Progress Steps
 
 ### Loading Spinners
+The loading spinner is used with a Livewire component and can be used on its own or as part of another element, e.g. a button.
+The spinner also requires some custom CSS.
+
+There are options for the spinner which are size (la-sm or la-2x or la-3x), icon (default is ball-spin-clockwise, the other is line-scale) and whether it is dark or light (light is default, the example below shows the dark alternative).
+
+```
+<div wire:loading.delay wire:target="input" class="absolute inset-y-0 right-0 flex items-center pt-3 pr-3 pointer-events-none">
+    <x-loading size="la-sm" shade="la-dark"></x-loading>
+</div>
+```                                            
+
 
 ### Inputs
 Inputs can be used horizontally or vertically.  The default is vertical (the label above the input), to change to the label being to the left of the input add the 'inline' attribute.
@@ -163,3 +174,4 @@ Attributes: id, name, label, value and type (radio or checkbox).
 ```
 
 ### Tables
+The tables are split into the base table and then three parts: head, body and foot.
