@@ -39,6 +39,9 @@ HTML headings are defined with the ```<h1>``` to ```<h6>``` tags.
 <x-bcl::headings.h6>Heading 6</x-bcl::headings.h6>
 ```
 
+AlpineJS and Livewire models can also be used with the 'x-' and 'wire:' attributes.
+
+
 ### Links
 Anchor tags ```<a>``` have four variables that can be passed through to the component: href (default: #), color (default: blue), icon (default: null) and target (default: _blank).
 
