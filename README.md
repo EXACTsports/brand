@@ -4,7 +4,18 @@
 This repository contains UI components and assets with our branding. It is only designed for use on EXACT Sports branded websites.
 
 ## Installation
+In the project composer.json file add the following to the 'require' list:
+```
+"exactsports/blade-component-library": "dev-main",
 
+```
+
+In Terminal, run the following code:
+```
+composer require exactsports/blade-component-library
+
+npm run dev
+```
 
 ## Components
 - [Headings](#headings) 
