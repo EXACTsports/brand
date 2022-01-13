@@ -67,7 +67,7 @@ Target and href are standard anchor variables.
 ### Alerts
 Alerts have one variable that can be passed to the component: type.
 
-This is a choice between success, warning and failure.  Each option as a different colour and icon.  
+This is a choice between success, warning and failure.  Each option is a different colour and icon.  
 
 ```
 <x-alert class="my-4" type="warning">
