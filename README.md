@@ -65,6 +65,22 @@ Target and href are standard anchor variables.
 ```
 
 ### Alerts
+Alerts have one variable that can be passed to the component: type.
+
+This is a choice between success, warning and failure.  Each option as a different colour and icon.  
+
+```
+<x-alert class="my-4" type="warning">
+    <p class="text-sm">
+        You have no credits left.
+        <a href="#" class="font-medium underline hover:text-gray-800">
+            Upgrade your account to add more credits.
+        </a>
+    </p>
+</x-alert>
+```
+
+AlpineJS and Livewire models can also be used with the 'x-' and 'wire:' attributes.
 
 ### Badges
 Buttons have one optional variable that can be passed to the component: color.
