@@ -65,12 +65,14 @@ Target and href are standard anchor variables.
 ```
 
 ### Alerts
-Alerts have one variable that can be passed to the component: type.
+Alerts have two variable that can be passed to the component: type and flag (default = false).
 
 This is a choice between success, warning and failure.  Each option is a different colour and icon.  
 
+Alternatively, you can change the icon to be a flag by padding this through, as below.
+
 ```
-<x-alert class="my-4" type="warning">
+<x-alert class="my-4" type="warning" flag>
     <p class="text-sm">
         You have no credits left.
         <a href="#" class="font-medium underline hover:text-gray-800">
