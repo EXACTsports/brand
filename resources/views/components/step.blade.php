@@ -19,7 +19,7 @@
 @endswitch
 
 <li class="md:flex-1">
-    <a href="#"
+    <a href="{{ request()->fullUrlWithQuery(array_merge(request()->query(), ['step' => $step])) }}"
         class="flex flex-col py-2 pl-4 border-l-4 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4 {{$anchorColours}}">
         <span class="text-xs font-semibold tracking-wide uppercase {{$stepColours}}">Step {{$step}}</span>
         <span class="text-sm font-medium">{{$slot}}</span>
