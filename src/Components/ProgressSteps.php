@@ -1,35 +1,23 @@
 <?php
 
-namespace App\View\Components;
+namespace EXACTSports\BladeComponentLibrary\Components;
 
 use Closure;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class ProgressSteps extends Component
 {
 
-    public $current;
-    public $steps = [];
-
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct($current, $steps)
+    public function __construct(public int $current, public array $steps)
     {
-        $this->current = $current;
-        $this->steps = $steps;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return View|Closure|string
-     */
-    public function render()
+    public function render(): View|Factory|Htmlable|string|Closure|Application
     {
-        return view('components.progress-steps');
+        return view('bcl::components.progress-steps');
     }
 }
