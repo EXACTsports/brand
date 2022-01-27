@@ -4,32 +4,35 @@
     @case('success')
     @php
         $border = "border-green-400";
-        $bg = "bg-green-50";
-        $text = "green-800"
+        $icon = "text-green-400";
+        $background = "bg-green-50";
+        $text = "text-green-800"
     @endphp
     @break
     @case('warning')
     @php
         $border = "border-yellow-400";
-        $bg = "bg-yellow-50";
-        $text = "yellow-800"
+        $icon = "text-yellow-400"
+        $background = "bg-yellow-50";
+        $text = "text-yellow-800"
     @endphp
     @break
     @case('failure')
     @php
         $border = "border-red-400";
-        $bg = "bg-red-50";
-        $text = "red-800"
+        $icon = "text-red-400";
+        $background = "bg-red-50";
+        $text = "text-red-800"
     @endphp
     @break
 @endswitch
 
-<div {{ $attributes->merge(['class' => 'p-4 border-l-4']) }}
+<div {{ $attributes->merge(['class' => 'p-4 border-l-4' . $border, $background]) }}
         {{ $attributes->whereStartsWith('x-') }}
         {{ $attributes->thatStartWith('wire:') }}>
     <div class="flex">
         <div class="flex-shrink-0">
-            <svg class="w-5 h-5 text-{{$border}}" fill="currentColor" viewBox="0 0 20 20"
+            <svg class="w-5 h-5 {{ $icon }}" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 @if($flag===true)
                     <path fill-rule="evenodd"
@@ -59,8 +62,8 @@
                 @endif
             </svg>
         </div>
-        <div class="ml-3 text-{{$text}}">
-            {{$slot}}
+        <div class="ml-3 {{ $text }}">
+            {{ $slot }}
         </div>
     </div>
 </div>
