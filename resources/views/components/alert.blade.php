@@ -12,7 +12,7 @@
     @case('warning')
     @php
         $border = "border-yellow-400";
-        $icon = "text-yellow-400"
+        $icon = "text-yellow-400";
         $background = "bg-yellow-50";
         $text = "text-yellow-800"
     @endphp
@@ -27,7 +27,7 @@
     @break
 @endswitch
 
-<div {{ $attributes->merge(['class' => "p-4 border-l-4 . $border $background"]) }}
+<div {{ $attributes->merge(['class' => "p-4 border-l-4 $border $background"]) }}
         {{ $attributes->whereStartsWith('x-') }}
         {{ $attributes->thatStartWith('wire:') }}>
     <div class="flex">
