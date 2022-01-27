@@ -24,7 +24,7 @@
     @break
 @endswitch
 
-<div {{ $attributes->merge(['class' => 'p-4 border-l-4]) }}
+<div {{ $attributes->merge(['class' => 'p-4 border-l-4']) }}
         {{ $attributes->whereStartsWith('x-') }}
         {{ $attributes->thatStartWith('wire:') }}>
     <div class="flex">
