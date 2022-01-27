@@ -3,28 +3,28 @@
 @switch($type)
     @case('success')
     @php
-        $border = "green-400";
-        $bg = "green-50";
+        $border = "border-green-400";
+        $bg = "bg-green-50";
         $text = "green-800"
     @endphp
     @break
     @case('warning')
     @php
-        $border = "yellow-400";
-        $bg = "yellow-50";
+        $border = "border-yellow-400";
+        $bg = "bg-yellow-50";
         $text = "yellow-800"
     @endphp
     @break
     @case('failure')
     @php
-        $border = "red-400";
-        $bg = "red-50";
+        $border = "border-red-400";
+        $bg = "bg-red-50";
         $text = "red-800"
     @endphp
     @break
 @endswitch
 
-<div {{ $attributes->merge(['class' => 'p-4 border-l-4 border-'.$border.' bg-'.$bg]) }}
+<div {{ $attributes->merge(['class' => 'p-4 border-l-4]) }}
         {{ $attributes->whereStartsWith('x-') }}
         {{ $attributes->thatStartWith('wire:') }}>
     <div class="flex">
